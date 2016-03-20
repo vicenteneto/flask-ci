@@ -17,9 +17,11 @@ Flask-CI
 
 .. image:: http://img.shields.io/:status-alpha-orange.svg
     :target: https://pypi.python.org/pypi/flask-ci
+    :alt: Status
 
 .. image:: http://img.shields.io/:license-mit-blue.svg
     :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
+    :alt: License
 
 Continuous Integration with Flask
 
@@ -81,16 +83,14 @@ Here is the reporters prebuild with Flask-CI.
 
 - ``flask_ci.tasks.run_pylint``
     Runs `Pylint <http://www.logilab.org/project/pylint>`_ over selected apps.
-    Task-specific settings::
-        ``PYLINT_RCFILE``
+    Task-specific settings: PYLINT_RCFILE
 
 - ``flask_ci.tasks.run_nose``
     Runs `Nose <https://nose.readthedocs.org/en/latest>`_ over selected apps.
 
 - ``flask_ci.tasks.run_pep8``
     Runs `Pep8 <http://pep8.readthedocs.org/en/latest/index.html>`_ tool over selected apps.
-    Task-specific settings::
-        ``PEP8_RCFILE``
+    Task-specific settings: PEP8_RCFILE
 
 Contributing
 ------------
