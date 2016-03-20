@@ -1,0 +1,2 @@
+class Reporter(object):
+    pass
