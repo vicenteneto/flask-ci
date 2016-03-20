@@ -74,7 +74,7 @@ Settings
         Default value: ``CI_TASKS = []``
 
 Reporters
---------
+---------
 Here is the reporters prebuild with Flask-CI.
 
 - ``flask_ci.tasks.run_pylint``
