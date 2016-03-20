@@ -1,17 +1,23 @@
 Flask-CI
 ========
 
+.. image:: https://img.shields.io/pypi/v/flask-ci.svg
+    :target: https://pypi.python.org/pypi/flask-ci
+
+.. image:: https://img.shields.io/pypi/dm/flask-ci.svg
+    :target: https://pypi.python.org/pypi/flask-ci
+
 .. image:: https://travis-ci.org/vicenteneto/flask-ci.svg?branch=master
-  :target: https://travis-ci.org/vicenteneto/flask-ci
-  :alt: Build Status
+    :target: https://travis-ci.org/vicenteneto/flask-ci
+    :alt: Build Status
 
 .. image:: https://requires.io/github/vicenteneto/flask-ci/requirements.svg?branch=master
-  :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
-  :alt: Requirements Status
+    :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
+    :alt: Requirements Status
 
 .. image:: http://img.shields.io/:license-mit-blue.svg
-  :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
-  :alt: License
+    :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
+    :alt: License
 
 Continuous Integration with Flask
 
