@@ -1,2 +1,3 @@
 class Reporter(object):
-    pass
+    def run(self, **options):
+        pass

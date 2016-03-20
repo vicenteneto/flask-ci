@@ -1,6 +1,7 @@
 # flask-ci
 
 [![Build Status](https://travis-ci.org/vicenteneto/flask-ci.svg?branch=master)](https://travis-ci.org/vicenteneto/flask-ci)
+[![Requirements Status](https://requires.io/github/vicenteneto/flask-ci/requirements.svg?branch=master)](https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master)
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/vicenteneto/flask-ci/blob/master/LICENSE)
 
 ## Table of contents

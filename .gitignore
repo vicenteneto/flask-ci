@@ -11,3 +11,9 @@ __pycache__/
 
 # VirtualEnv dir
 pyEnv/
+
+# Reports dir
+reports/
+
+# Egg-Info
+Flask_CI.egg-info/
