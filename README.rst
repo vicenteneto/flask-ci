@@ -25,7 +25,7 @@ Table of contents
 Contributing
 ------------
 
-Have a bug or a feature request? `Please, open a GitHub issue <#https://github.com/vicenteneto/flask-ci/issues/new>`_.
+Have a bug or a feature request? `Please, open a GitHub issue <https://github.com/vicenteneto/flask-ci/issues/new>`_.
 
 Creator
 -------
