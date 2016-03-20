@@ -1,25 +1,40 @@
-# flask-ci
+Flask-CI
+========
 
-[![Build Status](https://travis-ci.org/vicenteneto/flask-ci.svg?branch=master)](https://travis-ci.org/vicenteneto/flask-ci)
-[![Requirements Status](https://requires.io/github/vicenteneto/flask-ci/requirements.svg?branch=master)](https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master)
-[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/vicenteneto/flask-ci/blob/master/LICENSE)
+.. image:: https://travis-ci.org/vicenteneto/flask-ci.svg?branch=master
+  :target: https://travis-ci.org/vicenteneto/flask-ci
+  :alt: Build Status
 
-## Table of contents
+.. image:: https://requires.io/github/vicenteneto/flask-ci/requirements.svg?branch=master
+  :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
+  :alt: Requirements Status
 
-* [Contributing](#contributing)
-* [Creator](#creator)
-* [Copyright and license](#copyright-and-license)
+.. image:: http://img.shields.io/:license-mit-blue.svg
+  :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
+  :alt: License
 
-## Contributing
+Continuous Integration with Flask
+
+Table of contents
+-----------------
+
+* `Contributing <#contributing>`_.
+* `Creator <#creator>`_.
+* `Copyright and License <#copyright-and-license>`_.
+
+Contributing
+------------
 
 Have a bug or a feature request? [Please, open a GitHub issue](https://github.com/vicenteneto/flask-ci/issues/new).
 
-## Creator
+Creator
+-------
 
 **Vicente Neto**
 
 * <https://github.com/vicenteneto>
 
-## Copyright and license
+Copyright and license
+---------------------
 
-Copyright 2016-, Vicente Neto. This project is licensed under the [MIT License](https://github.com/vicenteneto/flask-ci/blob/master/LICENSE).
+Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <https://github.com/vicenteneto/flask-ci/blob/master/LICENSE>`_.
