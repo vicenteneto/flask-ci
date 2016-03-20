@@ -7,7 +7,7 @@ Provide Continuous Integration support operations for Flask apps.
 from setuptools import setup
 
 version = '0.3.19'
-install_requires = ['Flask-Script']
+install_requires = ['Flask-Script', 'Pylint']
 
 setup(
     name='Flask-CI',

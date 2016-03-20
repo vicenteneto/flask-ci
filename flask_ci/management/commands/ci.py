@@ -16,16 +16,23 @@ class CICommand(Command):
         super(Command, self).__init__()
         self.tasks_cls = [import_module(module_name).Reporter for module_name in self.get_task_list(settings)]
         self.tasks = [task_cls() for task_cls in self.tasks_cls]
+        self.settings = settings
 
     @staticmethod
     def get_task_list(settings):
         return getattr(settings, 'JENKINS_TASKS', ())
 
     def get_options(self):
-        return [
+        options = [
             Option('-o', '--output-dir', dest='output_dir', default='reports'),
             Option('-v', '--verbose', action='store_true', dest='verbose', default=False)
         ]
+
+        for task in self.tasks:
+            if hasattr(task, 'add_arguments'):
+                options = options + task.get_arguments()
+
+        return options
 
     def __call__(self, *args, **kwargs):
         output_dir = kwargs['output_dir']
@@ -39,7 +46,7 @@ class CICommand(Command):
         for task in self.tasks:
             if verbose:
                 print('Executing {0}...'.format(task.__module__))
-            task.run(**kwargs)
+            task.run(self.settings, **kwargs)
 
         if verbose:
             print('Done')
