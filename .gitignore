@@ -17,3 +17,6 @@ reports/
 
 # Egg-Info
 Flask_CI.egg-info/
+
+# Dist dir
+dist/

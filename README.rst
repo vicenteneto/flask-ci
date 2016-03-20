@@ -24,9 +24,53 @@ Continuous Integration with Flask
 Table of contents
 -----------------
 
-* `Contributing <#contributing>`_.
-* `Creator <#creator>`_.
-* `Copyright and License <#copyright-and-license>`_.
+* `Installation <#installation>`_
+* `Usage <#usage>`_
+* `Settings <#settings>`_
+* `Contributing <#contributing>`_
+* `Creator <#creator>`_
+* `Copyright and License <#copyright-and-license>`_
+
+Installation
+------------
+
+From PyPI::
+
+    $ pip install Flask-CI
+
+Or by downloading the source and running::
+
+    $ python setup.py install
+
+Latest git version::
+
+    $ pip install git+https://github.com/vicenteneto/flask-ci.git#egg=Flask-CI
+
+Usage
+-----
+
+Import the CICommand sub-manager::
+
+    from flask_ci.management.commands.ci import CICommand
+
+Register the CICommand sub-manager to your primary Manager (within manage.py)::
+
+    manager = Manager(create_app())
+    manager.add_command('ci', CICommand(settings))
+
+Configure your continuous integration tool to run the following command::
+
+    $ python manage.py ci
+
+Settings
+--------
+
+- ``PROJECT_APPS``
+    A list/tuple of the custom apps you’ve written for your project. Reports are generated only for the apps from this list.
+
+- ``CI_TASKS``
+    List of Continuous Integration reporters executed by ``python manage.py ci`` command.
+        Default value: ``CI_TASKS = []``
 
 Contributing
 ------------

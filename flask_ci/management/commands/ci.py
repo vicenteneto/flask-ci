@@ -20,7 +20,7 @@ class CICommand(Command):
 
     @staticmethod
     def get_task_list(settings):
-        return getattr(settings, 'JENKINS_TASKS', ())
+        return getattr(settings, 'CI_TASKS', ())
 
     def get_options(self):
         options = [
