@@ -15,9 +15,11 @@ Flask-CI
     :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
     :alt: Requirements Status
 
+.. image:: http://img.shields.io/:status-alpha-orange.svg
+    :target: https://pypi.python.org/pypi/flask-ci
+
 .. image:: http://img.shields.io/:license-mit-blue.svg
     :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
-    :alt: License
 
 Continuous Integration with Flask
 
