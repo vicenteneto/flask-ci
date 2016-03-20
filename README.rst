@@ -26,6 +26,7 @@ Table of contents
 
 * `Installation <#installation>`_
 * `Usage <#usage>`_
+* `Settings <#settings>`_
 * `Contributing <#contributing>`_
 * `Creator <#creator>`_
 * `Copyright and License <#copyright-and-license>`_
@@ -60,6 +61,16 @@ Register the CICommand sub-manager to your primary Manager (within manage.py)::
 Configure your continuous integration tool to run the following command::
 
     $ python manage.py ci
+
+Settings
+--------
+
+- ``PROJECT_APPS``
+    A list/tuple of the custom apps you’ve written for your project. Reports are generated only for the apps from this list.
+
+- ``CI_TASKS``
+    List of Continuous Integration reporters executed by ``python manage.py ci`` command.
+        Default value: ``CI_TASKS = []``
 
 Contributing
 ------------
