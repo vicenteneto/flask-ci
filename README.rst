@@ -15,9 +15,11 @@ Flask-CI
     :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
     :alt: Requirements Status
 
+.. image:: http://img.shields.io/:status-alpha-orange.svg
+    :target: https://pypi.python.org/pypi/flask-ci
+
 .. image:: http://img.shields.io/:license-mit-blue.svg
     :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
-    :alt: License
 
 Continuous Integration with Flask
 
@@ -27,6 +29,7 @@ Table of contents
 * `Installation <#installation>`_
 * `Usage <#usage>`_
 * `Settings <#settings>`_
+* `Reporters <#reporters>`_
 * `Contributing <#contributing>`_
 * `Creator <#creator>`_
 * `Copyright and License <#copyright-and-license>`_
@@ -71,6 +74,23 @@ Settings
 - ``CI_TASKS``
     List of Continuous Integration reporters executed by ``python manage.py ci`` command.
         Default value: ``CI_TASKS = []``
+
+Reporters
+---------
+Here is the reporters prebuild with Flask-CI.
+
+- ``flask_ci.tasks.run_pylint``
+    Runs `Pylint <http://www.logilab.org/project/pylint>`_ over selected apps.
+    Task-specific settings::
+        ``PYLINT_RCFILE``
+
+- ``flask_ci.tasks.run_nose``
+    Runs `Nose <https://nose.readthedocs.org/en/latest>`_ over selected apps.
+
+- ``flask_ci.tasks.run_pep8``
+    Runs `Pep8 <http://pep8.readthedocs.org/en/latest/index.html>`_ tool over selected apps.
+    Task-specific settings::
+        ``PEP8_RCFILE``
 
 Contributing
 ------------

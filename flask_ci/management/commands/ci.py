@@ -29,7 +29,7 @@ class CICommand(Command):
         ]
 
         for task in self.tasks:
-            if hasattr(task, 'add_arguments'):
+            if hasattr(task, 'get_arguments'):
                 options = options + task.get_arguments()
 
         return options

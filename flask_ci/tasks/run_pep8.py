@@ -7,7 +7,8 @@ class Reporter(object):
     @staticmethod
     def get_arguments():
         return [
-            Option('--pep8-rcfile', dest='pep8-rcfile')
+            Option('--pep8-rcfile', dest='pep8-rcfile'),
+            Option('--pep8-max-line-length', dest='pep8-max-line-length', type=int, default=120)
         ]
 
     @staticmethod
@@ -18,10 +19,6 @@ class Reporter(object):
         rcfile = getattr(settings, 'PEP8_RCFILE', '')
         if os.path.exists(rcfile):
             return rcfile
-
-        # use built-in
-        root_dir = os.path.normpath(os.path.dirname(__file__))
-        return os.path.join(root_dir, 'pep8.rc')
 
     def run(self, settings, **options):
         output = open(os.path.join(options['output_dir'], 'pep8.report'), 'w')
@@ -35,7 +32,10 @@ class Reporter(object):
 
         pep8_options = {}
         config_file = self.get_config_path(settings, options)
-        pep8_options['config_file'] = config_file
+        if config_file is not None:
+            pep8_options['config_file'] = config_file
+
+        pep8_options['max_line_length'] = options['pep8-max-line-length']
 
         pep8style = pep8.StyleGuide(
             parse_argv=False,
