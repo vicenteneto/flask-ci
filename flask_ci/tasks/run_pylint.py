@@ -17,13 +17,13 @@ class Reporter(object):
     @staticmethod
     def get_arguments():
         return [
-            Option('--pylint-rcfile', dest='pylint_rcfile')
+            Option('--pylint-rcfile', dest='pylint-rcfile')
         ]
 
     @staticmethod
     def get_config_path(settings, options):
-        if options['pylint_rcfile']:
-            return options['pylint_rcfile']
+        if options.get('pylint_rcfile', None):
+            return options['pylint-rcfile']
 
         rcfile = getattr(settings, 'PYLINT_RCFILE', 'pylint.rc')
         if os.path.exists(rcfile):
