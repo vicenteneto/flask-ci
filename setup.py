@@ -17,7 +17,7 @@ setup(
     author='Vicente Neto',
     author_email='sneto.vicente@gmail.com',
     license='MIT',
-    packages=['flask_ci'],
+    packages=['flask_ci', 'flask_ci.management', 'flask_ci.tasks', 'flask_ci.management.commands'],
     install_requires=install_requires,
     zip_safe=False
 )
