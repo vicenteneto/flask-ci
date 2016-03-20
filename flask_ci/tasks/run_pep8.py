@@ -15,7 +15,7 @@ class Reporter(object):
         if options.get('pep8-rcfile', None):
             return options['pep8-rcfile']
 
-        rcfile = getattr(settings, 'PEP8_RCFILE', None)
+        rcfile = getattr(settings, 'PEP8_RCFILE', '')
         if os.path.exists(rcfile):
             return rcfile
 
