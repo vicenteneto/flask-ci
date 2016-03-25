@@ -27,9 +27,9 @@ class Reporter(object):
 
         nose.run(argv=args)
 
-        if options['with-xunit']:
+        if options['with-xunit'] and os.path.isfile('nosetests.xml'):
             os.rename('nosetests.xml', 'reports/nosetests.xml')
         if options['with-coverage']:
             os.remove('.coverage')
-        if options['cover-xml'] and not options['no-cover-xml']:
+        if options['with-coverage'] and options['cover-xml'] and not options['no-cover-xml']:
             os.rename('coverage.xml', 'reports/coverage.xml')
