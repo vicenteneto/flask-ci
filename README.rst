@@ -84,6 +84,21 @@ Settings
 - ``PROJECT_APPS``
     A list of the custom apps you’ve written for your project. Reports are generated only for the apps from this list.
 
+Sample::
+
+    # settings.py
+
+    CI_TASKS = [
+        'flask_ci.tasks.run_nose',
+        'flask_ci.tasks.run_pep8',
+        'flask_ci.tasks.run_pylint'
+    ]
+
+    PROJECT_APPS = [
+        'flask_ci_test',
+        'flask_ci_test_users'
+    ]
+
 Reporters
 ---------
 Here is the reporters prebuild with Flask-CI.
@@ -114,6 +129,7 @@ Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <
 
 Changes
 =======
+
 0.3.25 - 2016-03-25
 -------------------
 
