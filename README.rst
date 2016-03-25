@@ -54,13 +54,25 @@ Latest git version::
 Usage
 -----
 
+Consider you have this code::
+
+    # manage.py
+
+    from flask.ext.script import Manager
+    from myapp import create_app
+    import settings
+
+    manager = Manager(create_app(settings))
+
+    if __name__ == "__main__":
+        manager.run()
+
 Import the CICommand sub-manager::
 
     from flask_ci.management.commands.ci import CICommand
 
 Register the CICommand sub-manager to your primary Manager (within manage.py)::
 
-    manager = Manager(create_app())
     manager.add_command('ci', CICommand(settings))
 
 Configure your continuous integration tool to run the following command::
@@ -70,11 +82,11 @@ Configure your continuous integration tool to run the following command::
 Settings
 --------
 
-- ``PROJECT_APPS``
-    A list of the custom apps you’ve written for your project. Reports are generated only for the apps from this list.
-
 - ``CI_TASKS``
     List of Continuous Integration reporters executed by ``python manage.py ci`` command.
+
+- ``PROJECT_APPS``
+    A list of the custom apps you’ve written for your project. Reports are generated only for the apps from this list.
 
 Reporters
 ---------
