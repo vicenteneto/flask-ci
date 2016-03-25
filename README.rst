@@ -1,6 +1,5 @@
 Flask-CI
 ========
-
 .. image:: https://img.shields.io/pypi/v/flask-ci.svg
     :target: https://pypi.python.org/pypi/flask-ci
 
@@ -27,18 +26,17 @@ Continuous Integration with Flask
 
 Table of contents
 -----------------
-
 * `Installation <#installation>`_
 * `Usage <#usage>`_
 * `Settings <#settings>`_
 * `Reporters <#reporters>`_
+* `Changes <#changes>`_
 * `Contributing <#contributing>`_
 * `Creator <#creator>`_
 * `Copyright and License <#copyright-and-license>`_
 
 Installation
 ------------
-
 From PyPI::
 
     $ pip install Flask-CI
@@ -53,7 +51,6 @@ Latest git version::
 
 Usage
 -----
-
 Consider you have this code::
 
     # manage.py
@@ -81,7 +78,6 @@ Configure your continuous integration tool to run the following command::
 
 Settings
 --------
-
 - ``CI_TASKS``
     List of Continuous Integration reporters executed by ``python manage.py ci`` command.
 
@@ -103,17 +99,23 @@ Here is the reporters prebuild with Flask-CI.
 
 Contributing
 ------------
-
 Have a bug or a feature request? `Please, open a GitHub issue <https://github.com/vicenteneto/flask-ci/issues/new>`_.
 
 Creator
 -------
-
 **Vicente Neto**
 
 * <https://github.com/vicenteneto>
 
 Copyright and license
 ---------------------
-
 Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <https://github.com/vicenteneto/flask-ci/blob/master/LICENSE>`_.
+
+
+Changes
+=======
+0.3.25 - 2016-03-25
+-------------------
+
+- Fixing README usage error
+- Added a test application
