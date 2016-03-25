@@ -71,7 +71,7 @@ Settings
 --------
 
 - ``PROJECT_APPS``
-    A list/tuple of the custom apps you’ve written for your project. Reports are generated only for the apps from this list.
+    A list of the custom apps you’ve written for your project. Reports are generated only for the apps from this list.
 
 - ``CI_TASKS``
     List of Continuous Integration reporters executed by ``python manage.py ci`` command.
