@@ -14,7 +14,7 @@ Flask-CI
     :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
     :alt: Requirements Status
 
-.. image:: http://img.shields.io/:status-alpha-orange.svg
+.. image:: http://img.shields.io/:status-beta-yellowgren.svg
     :target: https://pypi.python.org/pypi/flask-ci
     :alt: Status
 
