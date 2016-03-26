@@ -68,7 +68,7 @@ Consider you have this code::
 
 Import the CICommand sub-manager::
 
-    from flask_ci.management.commands.ci import CICommand
+    from flask.ext.ci import CICommand
 
 Register the CICommand sub-manager to your primary Manager (within manage.py)::
 
@@ -134,9 +134,13 @@ Changes
 
 0.3.25 - 2016-03-25
 -------------------
-
 - Fixing README usage error
 - Added a test application
+
+0.3.26 -- 2016-03-26
+--------------------
+- Refactoring project architecture
+- Updating outdated requirements
 
 
 3rd Party Stuff
