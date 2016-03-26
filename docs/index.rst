@@ -1,5 +1,6 @@
-Flask-CI
-========
+Flask-CI's documentation!
+=========================
+
 .. image:: https://img.shields.io/pypi/v/flask-ci.svg
     :target: https://pypi.python.org/pypi/flask-ci
 
@@ -22,20 +23,8 @@ Flask-CI
     :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
     :alt: License
 
-Continuous Integration with Flask
-
-Table of contents
------------------
-* `Installation <#installation>`_
-* `Usage <#usage>`_
-* `Settings <#settings>`_
-* `Reporters <#reporters>`_
-* `Changes <#changes>`_
-* `Contributing <#contributing>`_
-* `Creator <#creator>`_
-* `Copyright and License <#copyright-and-license>`_
-* `Changes <#changes>`_
-* `3rd Party Stuff <#3rd-party-stuff>`_
+Continuous Integration with Flask.
+Flask-CI is built with the help of `Flask-Script <https://flask-script.readthedocs.org/en/latest/>`_.
 
 Installation
 ------------
@@ -130,20 +119,14 @@ Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <
 
 
 Changes
-=======
+-------
 
-0.3.25 - 2016-03-25
--------------------
-- Fixing README usage error
-- Added a test application
+**0.3.25 - 2016-03-25**
 
-0.3.26 -- 2016-03-26
---------------------
+- Fixing usage section typo on README
+- Added an example application
+
+**0.3.26 - 2016-03-26**
+
 - Refactoring project architecture
 - Updating outdated requirements
-
-
-3rd Party Stuff
-===============
-
-Flask-CI is built with the help of `FLask-Script <https://flask-script.readthedocs.org/en/latest/>`_.
