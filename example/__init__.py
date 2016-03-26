@@ -1,2 +1,0 @@
-import flask_ci_test
-import flask_ci_test_users

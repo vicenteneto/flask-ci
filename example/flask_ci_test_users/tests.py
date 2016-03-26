@@ -1,5 +1,6 @@
-from flask.ext.testing import TestCase
 from flask_ci_test.app import create_app
+
+from flask.ext.testing import TestCase
 
 
 class TestUsersViews(TestCase):

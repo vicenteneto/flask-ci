@@ -1,6 +1,6 @@
 #!/usr/bin/env python
+from flask.ext.ci import CICommand
 from flask.ext.script import Manager
-from flask_ci.management.commands.ci import CICommand
 from flask_ci_test import app, settings
 
 manager = Manager(app.create_app())
