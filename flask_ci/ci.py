@@ -23,7 +23,6 @@ class CICommand(Command):
     help = description = 'Perform CI operations.'
 
     def __init__(self, settings):
-        super(Command, self).__init__()
         self.tasks_cls = [import_module(module_name).Reporter for module_name in self.get_task_list(settings)]
         self.tasks = [task_cls() for task_cls in self.tasks_cls]
         self.settings = settings
