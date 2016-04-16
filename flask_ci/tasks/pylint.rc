@@ -2,6 +2,7 @@
 persistent=yes
 ignore=south_migrations
 cache-size=500
+load-plugins=pylint_flask
 
 [MESSAGES CONTROL]
 # C0111 Missing docstring
