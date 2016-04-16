@@ -33,7 +33,7 @@ class Reporter(object):
         output = open(os.path.join(options['output_dir'], 'pylint.report'), 'w')
 
         args = list()
-        args.append("--rcfile=%s" % self.get_config_path(settings, options))
+        args.append('--rcfile=%s' % self.get_config_path(settings, options))
         args += getattr(settings, 'PROJECT_APPS', [])
 
         lint.Run(args, reporter=ParseableTextReporter(output=output), exit=False)

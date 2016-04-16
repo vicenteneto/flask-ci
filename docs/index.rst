@@ -130,3 +130,7 @@ Changes
 
 - Refactoring project architecture
 - Updating outdated requirements
+
+**0.4.15 - 2016-04-15**
+
+- Added Flask-Pylint plugin on pylint reports
