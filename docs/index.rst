@@ -2,29 +2,29 @@ Flask-CI's documentation!
 =========================
 
 .. image:: https://img.shields.io/pypi/v/flask-ci.svg
-    :target: https://pypi.python.org/pypi/flask-ci
+:target: https://pypi.python.org/pypi/flask-ci
 
 .. image:: https://img.shields.io/pypi/dm/flask-ci.svg
-    :target: https://pypi.python.org/pypi/flask-ci
+:target: https://pypi.python.org/pypi/flask-ci
 
 .. image:: https://travis-ci.org/vicenteneto/flask-ci.svg?branch=master
-    :target: https://travis-ci.org/vicenteneto/flask-ci
+:target: https://travis-ci.org/vicenteneto/flask-ci
     :alt: Build Status
 
 .. image:: https://requires.io/github/vicenteneto/flask-ci/requirements.svg?branch=master
-    :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
+:target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
     :alt: Requirements Status
 
 .. image:: http://img.shields.io/:status-beta-yellowgreen.svg
-    :target: https://pypi.python.org/pypi/flask-ci
+:target: https://pypi.python.org/pypi/flask-ci
     :alt: Status
 
 .. image:: http://img.shields.io/:license-mit-blue.svg
-    :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
+:target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
     :alt: License
 
-Continuous Integration with Flask.
-Flask-CI is built with the help of `Flask-Script <https://flask-script.readthedocs.org/en/latest/>`_.
+    Continuous Integration with Flask.
+    Flask-CI is built with the help of `Flask-Script <https://flask-script.readthedocs.org/en/latest/>`_.
 
 Installation
 ------------
@@ -134,3 +134,7 @@ Changes
 **0.4.15 - 2016-04-15**
 
 - Added Flask-Pylint plugin on pylint reports
+
+**0.4.22 - 216-04-22**
+
+- Fixing nose tests task execution
