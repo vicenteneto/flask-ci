@@ -7,11 +7,11 @@ class Reporter(object):
     def get_arguments():
         return [
             Option('--with-xunit', action='store_true', dest='with-xunit', default=False),
-            Option('--xunit-file', dest='xunit-file', default=''),
+            Option('--xunit-file', dest='xunit-file', default='reports/nosetests.xml'),
             Option('--with-coverage', action='store_true', dest='with-coverage', default=False),
             Option('--cover-xml', action='store_true', dest='cover-xml', default=False),
             Option('--cover-xml-file', dest='cover-xml-file', default='reports/coverage.xml'),
-            Option('--cover-html', action='store_true', dest='cover-xml', default=False),
+            Option('--cover-html', action='store_true', dest='cover-html', default=False),
             Option('--cover-html-dir', dest='cover-html-dir', default='reports/html-coverage'),
             Option('--cover-branches', action='store_true', dest='cover-branches', default=False)
         ]
@@ -34,7 +34,8 @@ class Reporter(object):
         if options['cover-branches']:
             args.append('--cover-branches')
 
-        os.system('nosetests %s' % ' '.join(args))
+        command = 'nosetests %s' % ' '.join(args)
+        os.system(command)
 
         if options['with-coverage']:
             os.remove('.coverage')
