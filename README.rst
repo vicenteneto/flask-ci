@@ -146,6 +146,10 @@ Changes
 --------------------
 - Added Flask-Pylint plugin on pylint reports
 
+0.4.22 -- 2016-04-22
+--------------------
+- Fixing nose tests task execution
+
 
 3rd Party Stuff
 ===============

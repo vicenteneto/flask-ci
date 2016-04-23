@@ -12,7 +12,7 @@ Links
 """
 from setuptools import setup
 
-version = '0.4.15'
+version = '0.4.22'
 packages = ['flask_ci', 'flask_ci.tasks']
 install_requires = ['Coverage', 'Flask-Script', 'Nose', 'Pep8', 'Pylint', 'Pylint-Flask']
 flask_ci_pkg_data = ['tasks/pylint.rc']
