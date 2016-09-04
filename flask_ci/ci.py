@@ -8,10 +8,10 @@
     :copyright: (c) 2016 by Vicente Neto.
     :license: MIT, see LICENSE for more details.
 """
+import os
 from importlib import import_module
 
-import os
-from flask.ext.script import Command, Option
+from flask_script import Command, Option
 
 
 class CICommand(Command):

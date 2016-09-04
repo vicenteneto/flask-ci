@@ -46,7 +46,7 @@ Consider you have this code::
 
     # manage.py
 
-    from flask.ext.script import Manager
+    from flask_script import Manager
     from myapp import create_app
     import settings
 
@@ -57,7 +57,7 @@ Consider you have this code::
 
 Import the CICommand sub-manager::
 
-    from flask.ext.ci import CICommand
+    from flask_ci import CICommand
 
 Register the CICommand sub-manager to your primary Manager (within manage.py)::
 
@@ -120,6 +120,10 @@ Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <
 
 Changes
 -------
+
+**0.9.4 - 2016-09-04**
+
+- Updating requirements dependencies
 
 **0.3.25 - 2016-03-25**
 

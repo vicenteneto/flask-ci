@@ -1,6 +1,7 @@
 import os.path
+
 import pep8
-from flask.ext.script import Option
+from flask_script import Option
 
 
 class Reporter(object):
