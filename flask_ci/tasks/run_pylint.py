@@ -1,5 +1,6 @@
 import os
-from flask.ext.script import Option
+
+from flask_script import Option
 from pylint import lint
 from pylint.reporters.text import TextReporter
 

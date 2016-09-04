@@ -1,5 +1,6 @@
 import os
-from flask.ext.script import Option
+
+from flask_script import Option
 
 
 class Reporter(object):
@@ -8,7 +9,6 @@ class Reporter(object):
         return [
             Option('--with-xunit', action='store_true', dest='with-xunit', default=False),
             Option('--xunit-file', dest='xunit-file', default='reports/nosetests.xml'),
-            Option('--with-coverage', action='store_true', dest='with-coverage', default=False),
             Option('--cover-xml', action='store_true', dest='cover-xml', default=False),
             Option('--cover-xml-file', dest='cover-xml-file', default='reports/coverage.xml'),
             Option('--cover-html', action='store_true', dest='cover-html', default=False),
@@ -22,7 +22,7 @@ class Reporter(object):
         if options['with-xunit']:
             args.append('--with-xunit')
             args.append('--xunit-file=%s' % options['xunit-file'])
-        if options['with-coverage']:
+        if options['cover-xml'] or options['cover-html']:
             args.append('--with-coverage')
             args.append('--cover-package=%s' % ','.join(getattr(settings, 'PROJECT_APPS', [])))
         if options['cover-xml']:
