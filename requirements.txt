@@ -4,4 +4,4 @@ Nose==1.3.7
 Pep8==1.7.0
 Pylint==1.6.4
 Pylint-Flask==0.5
-Sphinx==1.4.6
+Sphinx==1.5.1
