@@ -49,7 +49,7 @@ class CICommand(Command):
 
         if not os.path.exists(output_dir):
             if verbose:
-                print 'Creating output directory...'
+                print('Creating output directory...')
             os.makedirs(output_dir)
 
         for task in self.tasks:
