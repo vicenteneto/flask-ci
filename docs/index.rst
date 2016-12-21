@@ -1,6 +1,5 @@
 Flask-CI's documentation!
 =========================
-
 .. image:: https://img.shields.io/pypi/v/flask-ci.svg
 :target: https://pypi.python.org/pypi/flask-ci
 
@@ -47,10 +46,10 @@ Consider you have this code::
     # manage.py
 
     from flask_script import Manager
-    from myapp import create_app
-    import settings
 
-    manager = Manager(create_app(settings))
+    from myapp import app, settings
+
+    manager = Manager(app.create_app(settings))
 
     if __name__ == "__main__":
         manager.run()
@@ -107,11 +106,8 @@ Contributing
 ------------
 Have a bug or a feature request? `Please, open a GitHub issue <https://github.com/vicenteneto/flask-ci/issues/new>`_.
 
-Creator
--------
-**Vicente Neto**
-
-* <https://github.com/vicenteneto>
+**Vicente Neto (creator)** - <https://github.com/vicenteneto>
+**Clement** - <https://github.com/clement10601>
 
 Copyright and license
 ---------------------
@@ -120,6 +116,9 @@ Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <
 
 Changes
 -------
+**0.12.21 - 2016-12-21**
+
+- Python3 compatible
 
 **0.9.4 - 2016-09-04**
 
