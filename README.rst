@@ -119,6 +119,7 @@ Contributing
 Have a bug or a feature request? `Please, open a GitHub issue <https://github.com/vicenteneto/flask-ci/issues/new>`_.
 
 **Vicente Neto (creator)** - <https://github.com/vicenteneto>
+
 **Clement** - <https://github.com/clement10601>
 
 Copyright and license
