@@ -22,7 +22,7 @@ Flask-CI
     :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
     :alt: License
 
-Continuous Integration with Flask
+Continuous Integration with Flask.
 
 Table of contents
 -----------------
@@ -90,16 +90,16 @@ Sample::
 
     # settings.py
 
-    CI_TASKS = [
+    CI_TASKS = (
         'flask_ci.tasks.run_nose',
         'flask_ci.tasks.run_pep8',
         'flask_ci.tasks.run_pylint'
-    ]
+    )
 
-    PROJECT_APPS = [
+    PROJECT_APPS = (
         'flask_ci_test',
         'flask_ci_test_users'
-    ]
+    )
 
 Reporters
 ---------
@@ -113,6 +113,7 @@ Here is the reporters prebuild with Flask-CI.
 
 - ``flask_ci.tasks.run_pylint``
     Runs `Pylint <http://www.logilab.org/project/pylint>`_ over selected apps. Task-specific settings: ``PYLINT_RCFILE``.
+https://github.com/vicenteneto
 
 Contributing
 ------------

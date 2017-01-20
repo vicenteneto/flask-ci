@@ -2,40 +2,42 @@ import os
 
 from flask_script import Option
 
+from flask_ci.util.constants import FlaskScript, Nose, Reports, Settings
+
 
 class Reporter(object):
     @staticmethod
     def get_arguments():
         return [
-            Option('--with-xunit', action='store_true', dest='with-xunit', default=False),
-            Option('--xunit-file', dest='xunit-file', default='reports/nosetests.xml'),
-            Option('--cover-xml', action='store_true', dest='cover-xml', default=False),
-            Option('--cover-xml-file', dest='cover-xml-file', default='reports/coverage.xml'),
-            Option('--cover-html', action='store_true', dest='cover-html', default=False),
-            Option('--cover-html-dir', dest='cover-html-dir', default='reports/html-coverage'),
-            Option('--cover-branches', action='store_true', dest='cover-branches', default=False)
+            Option(Nose.WITH_XUNIT_PARAM, action=FlaskScript.STORE_TRUE, dest=Nose.WITH_XUNIT, default=False),
+            Option(Nose.XUNIT_FILE_PARAM, dest=Nose.XUNIT_FILE, default=Reports.NOSE_TESTS),
+            Option(Nose.COVER_XML_PARAM, action=FlaskScript.STORE_TRUE, dest=Nose.COVER_XML, default=False),
+            Option(Nose.COVER_XML_FILE_PARAM, dest=Nose.COVER_XML_FILE, default=Reports.COVERAGE),
+            Option(Nose.COVER_HTML_PARAM, action=FlaskScript.STORE_TRUE, dest=Nose.COVER_HTML, default=False),
+            Option(Nose.COVER_HTML_DIR_PARAM, dest=Nose.COVER_HTML_DIR, default=Reports.HTML_COVERAGE),
+            Option(Nose.COVER_BRANCHES_PARAM, action=FlaskScript.STORE_TRUE, dest=Nose.COVER_BRANCHES, default=False)
         ]
 
     def run(self, settings, **options):
         args = list()
 
-        if options['with-xunit']:
-            args.append('--with-xunit')
-            args.append('--xunit-file=%s' % options['xunit-file'])
-        if options['cover-xml'] or options['cover-html']:
-            args.append('--with-coverage')
-            args.append('--cover-package=%s' % ','.join(getattr(settings, 'PROJECT_APPS', [])))
-        if options['cover-xml']:
-            args.append('--cover-xml')
-            args.append('--cover-xml-file=%s' % options['cover-xml-file'])
-        if options['cover-html']:
-            args.append('--cover-html')
-            args.append('--cover-html-dir=%s' % options['cover-html-dir'])
-        if options['cover-branches']:
-            args.append('--cover-branches')
+        if options[Nose.WITH_XUNIT]:
+            args.append(Nose.WITH_XUNIT_PARAM)
+            args.append('%s=%s' % (Nose.XUNIT_FILE_PARAM, options[Nose.XUNIT_FILE]))
+        if options[Nose.COVER_XML] or options[Nose.COVER_HTML]:
+            args.append(Nose.WITH_COVERAGE_PARAM)
+            args.append('%s=%s' % (Nose.COVER_PACKAGE_PARAM, ','.join(getattr(settings, Settings.PROJECT_APPS, []))))
+        if options[Nose.COVER_XML]:
+            args.append(Nose.COVER_XML_PARAM)
+            args.append('%s=%s' % (Nose.COVER_XML_FILE_PARAM, options[Nose.COVER_XML_FILE]))
+        if options[Nose.COVER_HTML]:
+            args.append(Nose.COVER_HTML_PARAM)
+            args.append('%s=%s' % (Nose.COVER_HTML_DIR_PARAM, options[Nose.COVER_HTML_DIR]))
+        if options[Nose.COVER_BRANCHES]:
+            args.append(Nose.COVER_BRANCHES_PARAM)
 
-        command = 'nosetests %s' % ' '.join(args)
+        command = '%s %s' % (Nose.NOSE_TESTS, ' '.join(args))
         os.system(command)
 
-        if options['with-coverage']:
-            os.remove('.coverage')
+        if Nose.WITH_COVERAGE_PARAM in args:
+            os.remove(Nose.COVERAGE_FILE)
