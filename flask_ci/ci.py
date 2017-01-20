@@ -13,6 +13,8 @@ from importlib import import_module
 
 from flask_script import Command, Option
 
+from flask_ci.util.constants import CI, Common, FlaskScript, Settings
+
 
 class CICommand(Command):
     """
@@ -29,12 +31,12 @@ class CICommand(Command):
 
     @staticmethod
     def get_task_list(settings):
-        return getattr(settings, 'CI_TASKS', ())
+        return getattr(settings, Settings.CI_TASKS, ())
 
     def get_options(self):
         options = [
-            Option('-o', '--output-dir', dest='output_dir', default='reports'),
-            Option('-v', '--verbose', action='store_true', dest='verbose', default=False)
+            Option('-o', CI.OUTPUT_DIR_PARAM, dest=CI.OUTPUT_DIR, default=Common.REPORTS),
+            Option('-v', CI.VERBOSE_PARAM, action=FlaskScript.STORE_TRUE, dest=CI.VERBOSE, default=False)
         ]
 
         for task in self.tasks:
@@ -44,8 +46,8 @@ class CICommand(Command):
         return options
 
     def __call__(self, *args, **kwargs):
-        output_dir = kwargs['output_dir']
-        verbose = kwargs['verbose']
+        output_dir = kwargs[CI.OUTPUT_DIR]
+        verbose = kwargs[CI.VERBOSE]
 
         if not os.path.exists(output_dir):
             if verbose:
