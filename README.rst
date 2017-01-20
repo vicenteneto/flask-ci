@@ -22,7 +22,7 @@ Flask-CI
 :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
     :alt: License
 
-    Continuous Integration with Flask.
+Continuous Integration with Flask.
 
 Table of contents
 -----------------
