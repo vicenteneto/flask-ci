@@ -1,2 +1,2 @@
-Flask-CI==0.12.21
+Flask-CI==1.1.19
 Flask-Testing==0.6.1

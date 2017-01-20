@@ -1,29 +1,28 @@
 Flask-CI's documentation!
 =========================
 .. image:: https://img.shields.io/pypi/v/flask-ci.svg
-:target: https://pypi.python.org/pypi/flask-ci
+    :target: https://pypi.python.org/pypi/flask-ci
 
 .. image:: https://img.shields.io/pypi/dm/flask-ci.svg
-:target: https://pypi.python.org/pypi/flask-ci
+    :target: https://pypi.python.org/pypi/flask-ci
 
 .. image:: https://travis-ci.org/vicenteneto/flask-ci.svg?branch=master
-:target: https://travis-ci.org/vicenteneto/flask-ci
+    :target: https://travis-ci.org/vicenteneto/flask-ci
     :alt: Build Status
 
 .. image:: https://requires.io/github/vicenteneto/flask-ci/requirements.svg?branch=master
-:target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
+    :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
     :alt: Requirements Status
 
 .. image:: http://img.shields.io/:status-beta-yellowgreen.svg
-:target: https://pypi.python.org/pypi/flask-ci
+    :target: https://pypi.python.org/pypi/flask-ci
     :alt: Status
 
 .. image:: http://img.shields.io/:license-mit-blue.svg
-:target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
+    :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
     :alt: License
 
-    Continuous Integration with Flask.
-    Flask-CI is built with the help of `Flask-Script <https://flask-script.readthedocs.org/en/latest/>`_.
+Continuous Integration with Flask.
 
 Installation
 ------------
@@ -106,7 +105,7 @@ Contributing
 ------------
 Have a bug or a feature request? `Please, open a GitHub issue <https://github.com/vicenteneto/flask-ci/issues/new>`_.
 
-**Vicente Neto (creator)** - <https://github.com/vicenteneto>
+**Vicente Neto (creator)** - <https://github.com/vicenteneto><br/>
 
 **Clement** - <https://github.com/clement10601>
 
@@ -117,6 +116,11 @@ Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <
 
 Changes
 -------
+**1.1.19 - 2017-01-01**
+
+- Code refactoring
+- Updating requirements dependencies
+
 **0.12.21 - 2016-12-21**
 
 - Python3 compatible
@@ -142,3 +146,8 @@ Changes
 **0.4.22 - 216-04-22**
 
 - Fixing nose tests task execution
+
+
+3rd Party Stuff
+===============
+Flask-CI is built with the help of `Flask-Script <https://flask-script.readthedocs.org/en/latest/>`_.
