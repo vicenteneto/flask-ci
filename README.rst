@@ -1,25 +1,25 @@
 Flask-CI
 ========
 .. image:: https://img.shields.io/pypi/v/flask-ci.svg
-:target: https://pypi.python.org/pypi/flask-ci
+    :target: https://pypi.python.org/pypi/flask-ci
 
 .. image:: https://img.shields.io/pypi/dm/flask-ci.svg
-:target: https://pypi.python.org/pypi/flask-ci
+    :target: https://pypi.python.org/pypi/flask-ci
 
 .. image:: https://travis-ci.org/vicenteneto/flask-ci.svg?branch=master
-:target: https://travis-ci.org/vicenteneto/flask-ci
+    :target: https://travis-ci.org/vicenteneto/flask-ci
     :alt: Build Status
 
 .. image:: https://requires.io/github/vicenteneto/flask-ci/requirements.svg?branch=master
-:target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
+    :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
     :alt: Requirements Status
 
 .. image:: http://img.shields.io/:status-beta-yellowgren.svg
-:target: https://pypi.python.org/pypi/flask-ci
+    :target: https://pypi.python.org/pypi/flask-ci
     :alt: Status
 
 .. image:: http://img.shields.io/:license-mit-blue.svg
-:target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
+    :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
     :alt: License
 
 Continuous Integration with Flask.
@@ -130,6 +130,11 @@ Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <
 
 Changes
 =======
+1.1.19 - 2017-01-01
+-------------------
+- Code refactoring
+- Updating requirements dependencies
+
 0.12.21 - 2016-12-21
 --------------------
 - Python3 compatible
