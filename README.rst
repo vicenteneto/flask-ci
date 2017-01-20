@@ -1,28 +1,28 @@
 Flask-CI
 ========
 .. image:: https://img.shields.io/pypi/v/flask-ci.svg
-    :target: https://pypi.python.org/pypi/flask-ci
+:target: https://pypi.python.org/pypi/flask-ci
 
 .. image:: https://img.shields.io/pypi/dm/flask-ci.svg
-    :target: https://pypi.python.org/pypi/flask-ci
+:target: https://pypi.python.org/pypi/flask-ci
 
 .. image:: https://travis-ci.org/vicenteneto/flask-ci.svg?branch=master
-    :target: https://travis-ci.org/vicenteneto/flask-ci
+:target: https://travis-ci.org/vicenteneto/flask-ci
     :alt: Build Status
 
 .. image:: https://requires.io/github/vicenteneto/flask-ci/requirements.svg?branch=master
-    :target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
+:target: https://requires.io/github/vicenteneto/flask-ci/requirements/?branch=master
     :alt: Requirements Status
 
 .. image:: http://img.shields.io/:status-beta-yellowgren.svg
-    :target: https://pypi.python.org/pypi/flask-ci
+:target: https://pypi.python.org/pypi/flask-ci
     :alt: Status
 
 .. image:: http://img.shields.io/:license-mit-blue.svg
-    :target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
+:target: https://github.com/vicenteneto/flask-ci/blob/master/LICENSE
     :alt: License
 
-Continuous Integration with Flask
+    Continuous Integration with Flask.
 
 Table of contents
 -----------------
@@ -90,16 +90,16 @@ Sample::
 
     # settings.py
 
-    CI_TASKS = [
+    CI_TASKS = (
         'flask_ci.tasks.run_nose',
         'flask_ci.tasks.run_pep8',
         'flask_ci.tasks.run_pylint'
-    ]
+    )
 
-    PROJECT_APPS = [
+    PROJECT_APPS = (
         'flask_ci_test',
         'flask_ci_test_users'
-    ]
+    )
 
 Reporters
 ---------
@@ -113,12 +113,13 @@ Here is the reporters prebuild with Flask-CI.
 
 - ``flask_ci.tasks.run_pylint``
     Runs `Pylint <http://www.logilab.org/project/pylint>`_ over selected apps. Task-specific settings: ``PYLINT_RCFILE``.
+https://github.com/vicenteneto
 
 Contributing
 ------------
 Have a bug or a feature request? `Please, open a GitHub issue <https://github.com/vicenteneto/flask-ci/issues/new>`_.
 
-**Vicente Neto (creator)** - <https://github.com/vicenteneto>
+**Vicente Neto (creator)** - <https://github.com/vicenteneto><br/>
 
 **Clement** - <https://github.com/clement10601>
 
