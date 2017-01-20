@@ -116,7 +116,7 @@ Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <
 
 Changes
 -------
-**1.1.19 - 2017-01-01**
+**1.1.20 - 2017-01-01**
 
 - Code refactoring
 - Updating requirements dependencies
