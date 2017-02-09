@@ -20,4 +20,3 @@ Flask_CI.egg-info/
 
 # Dist dir
 dist/
-/docs/_build

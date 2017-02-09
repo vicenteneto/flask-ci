@@ -105,7 +105,7 @@ Contributing
 ------------
 Have a bug or a feature request? `Please, open a GitHub issue <https://github.com/vicenteneto/flask-ci/issues/new>`_.
 
-**Vicente Neto (creator)** - <https://github.com/vicenteneto><br/>
+**Vicente Neto (creator)** - <https://github.com/vicenteneto>
 
 **Clement** - <https://github.com/clement10601>
 
@@ -113,9 +113,13 @@ Copyright and license
 ---------------------
 Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <https://github.com/vicenteneto/flask-ci/blob/master/LICENSE>`_.
 
-
 Changes
 -------
+**1.2.9 - 2017-01-21**
+
+- Unit tests
+- Integration tests
+
 **1.1.20 - 2017-01-01**
 
 - Code refactoring
@@ -147,7 +151,6 @@ Changes
 
 - Fixing nose tests task execution
 
-
 3rd Party Stuff
-===============
+---------------
 Flask-CI is built with the help of `Flask-Script <https://flask-script.readthedocs.org/en/latest/>`_.
