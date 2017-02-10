@@ -19,7 +19,7 @@ class Nose:
     COVER_BRANCHES_PARAM = Common.PARAM + COVER_BRANCHES
     COVER_HTML = 'cover-html'
     COVER_HTML_PARAM = Common.PARAM + COVER_HTML
-    COVER_HTML_DIR = 'cover-html'
+    COVER_HTML_DIR = 'cover-html-dir'
     COVER_HTML_DIR_PARAM = Common.PARAM + COVER_HTML_DIR
     COVER_PACKAGE = 'cover-package'
     COVER_PACKAGE_PARAM = Common.PARAM + COVER_PACKAGE

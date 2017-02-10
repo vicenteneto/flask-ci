@@ -16,7 +16,7 @@ class Reporter(object):
     @staticmethod
     def get_arguments():
         return [
-            Option(PyLint.PYLINT_RC_FILE, dest=PyLint.PYLINT_RC_FILE)
+            Option(PyLint.PYLINT_RC_FILE_PARAM, dest=PyLint.PYLINT_RC_FILE)
         ]
 
     @staticmethod

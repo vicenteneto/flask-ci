@@ -115,7 +115,7 @@ Copyright 2016-, Vicente Neto. This project is licensed under the `MIT License <
 
 Changes
 -------
-**1.2.9 - 2017-01-21**
+**1.2.9.1 - 2017-01-21**
 
 - Unit tests
 - Integration tests
