@@ -1,5 +1,7 @@
 import os
+import pkg_resources
 
+from packaging import version
 from flask_script import Option
 from pylint import lint
 from pylint.reporters.text import TextReporter
@@ -38,7 +40,12 @@ class Reporter(object):
         args = list()
         args.append('%s=%s' % (PyLint.RC_FILE_PARAM, self.get_config_path(settings, options)))
         args += getattr(settings, Settings.PROJECT_APPS, [])
-
-        lint.Run(args, reporter=ParseableTextReporter(output=output), exit=False)
+        
+        pylint_version = pkg_resources.get_distribution("pylint").version
+        
+        if version.parse(pylint_version) >= version.parse("2.0.0"):
+            lint.Run(args, reporter=ParseableTextReporter(output=output), do_exit=False)
+        else:
+            lint.Run(args, reporter=ParseableTextReporter(output=output), exit=False)    
 
         output.close()
